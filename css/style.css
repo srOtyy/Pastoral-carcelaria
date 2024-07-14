@@ -8,7 +8,7 @@
 .header .div-logos {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(187, 17, 17);
+  background-color: rgb(223, 43, 43);
 }
 .header .div-logos .titulo h2 {
   font-size: 2.5rem;
@@ -76,7 +76,7 @@
   animation-range: 150px 510px;
 }
 .main .nav ul li:hover, .main .nav ul a:hover {
-  color: rgb(187, 17, 17);
+  color: rgb(223, 43, 43);
   text-decoration: underline;
 }
 .main .imagen-header {
@@ -115,7 +115,7 @@
 }
 .main .container1 .noticias h3:hover {
   text-shadow: 1px 1px 2px black;
-  color: rgb(187, 17, 17);
+  color: rgb(223, 43, 43);
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: ease-out;
@@ -184,8 +184,9 @@
 }
 @keyframes li-a-animation {
   to {
-    color: rgb(187, 17, 17);
+    color: rgb(223, 43, 43);
     font-size: 1em;
+    font-weight: 700;
   }
 }
 footer {
@@ -251,7 +252,7 @@ footer {
   padding: 20px;
 }
 .container3 .principal .titulo {
-  border-bottom: 2px solid rgb(187, 17, 17);
+  border-bottom: 2px solid rgb(223, 43, 43);
   width: 80vw;
 }
 .container3 .principal .titulo h2 {
@@ -286,7 +287,7 @@ footer {
   padding: 20px;
 }
 .container4 .principal .titulo {
-  border-bottom: 2px solid rgb(187, 17, 17);
+  border-bottom: 2px solid rgb(223, 43, 43);
   width: 80vw;
 }
 .container4 .principal .titulo h2 {
@@ -315,7 +316,7 @@ footer {
   padding: 20px;
 }
 .container5 .principal .titulo {
-  border-bottom: 2px solid rgb(187, 17, 17);
+  border-bottom: 2px solid rgb(223, 43, 43);
   width: 80vw;
 }
 .container5 .principal .titulo h2 {
@@ -344,7 +345,7 @@ footer {
   padding: 20px;
 }
 .container6 .principal .titulo {
-  border-bottom: 2px solid rgb(187, 17, 17);
+  border-bottom: 2px solid rgb(223, 43, 43);
   width: 80vw;
 }
 .container6 .principal .titulo h2 {
