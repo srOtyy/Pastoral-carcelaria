@@ -1,0 +1,47 @@
+@import "colores";
+.header{
+    .div-logos{
+        display: flex;
+        justify-content: space-around;
+        background-color: $color-principal;
+        .titulo{
+            h2{
+                font-size: 2.5rem; 
+                letter-spacing: 0.2rem; 
+                text-transform: uppercase; 
+                padding-top: 15px;
+                margin-bottom: 10px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            }
+            .subtitulo{
+                h3{
+                    font-size: 1.5rem; 
+                    letter-spacing: 0.2rem; 
+                    text-transform: uppercase; 
+                    padding: 15px 0;
+                    margin-bottom: 30px;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+                    border-bottom: 1px solid black;
+                }
+            }
+    
+        }
+        .logo1{
+            background-image: url("logo1.jpeg");
+        }
+        .logo2{
+            background-image: url("logo2.jpeg");
+    
+        }
+        .logo1,.logo2{
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 150px;
+            margin:15px;
+        }
+    
+    }
+
+}

@@ -1,0 +1,162 @@
+@import "colores";
+@mixin funcion($nombre){
+    animation: $nombre both;
+    animation-timeline: scroll();
+    animation-range:150px 510px;
+}
+.main{
+    width: 100%;
+    margin: auto;
+    .nav{
+        position: sticky;
+        top: 0;
+        right: 0;
+        width: 100%;
+        background-color: #aaa99f;
+        padding: 25px;
+        @include funcion(nav-animation);
+        ul{
+            display: flex;
+            gap: 30px;
+            letter-spacing: 1px;
+            justify-content: center;
+            @include funcion(ul-animation);
+            li, a{
+                text-decoration: none;
+                list-style: none;
+                color: #222;
+                font-size: 1.2rem;
+                @include funcion(li-a-animation);
+                &:hover{
+                    color: $color-principal;
+                    text-decoration:underline;
+                }
+            }
+        }
+    }
+    .imagen-header{
+        margin: 10px 0;
+        background-image: url("fondoHead.jpeg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 550px;
+        width: 100%;
+
+    }
+   
+    .container1{
+        background-color: #aaa99f;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        .noticias{
+            height: 600px;
+            padding: 50px;
+            flex: 1 1 28%;
+            background-color: #dedede;
+            padding: 20px;
+            display: flex;
+            gap: 80px;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+            border-radius: 0px;
+            margin-right: 10px;
+            h3{
+                margin-top: 30px;
+                font-size: 1.6em;
+
+                &:hover{
+                    text-shadow: 1px 1px 2px black;
+                    color:$color-principal;
+                    transition-property: all;
+                    transition-duration: 1s;
+                    transition-timing-function: ease-out;
+                }
+            }
+            article{
+                .imagen{
+                    background: url("articulo.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    height: 180px;
+                    width: 320px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                .texto{
+                    padding-top: 5px;
+                    font-size: 0.95rem;
+                    color: black;
+                    h4{
+                        &:hover{
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        .principal{
+            flex: 1 1 72%;
+            overflow: auto;
+            h1{
+                font-size: 2.5rem;
+                text-align: center;
+                margin: 10px 0 25px 0;
+            }
+            .bloque{
+                margin: 5px;
+                padding: 20px;
+                h2{
+
+                    padding-bottom: 20px;
+                    font-size: 1.6rem;
+        
+                }
+                p{
+                    font-size: 1.2rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        
+    }
+
+}
+/* animaciones */
+@keyframes nav-animation{
+    0%{
+        padding: 25px 5px;
+    }
+    100%{
+        height: 55px;
+        padding: 15px 20px;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.896);
+    }
+}
+@keyframes ul-animation{
+    from{
+        gap: 30px;
+
+    }
+    to{
+        gap: 60px;
+    }
+}
+@keyframes li-a-animation{
+    from{
+
+    }
+    to{
+        color:$color-principal;
+        font-size:1em ;
+    }
+}
